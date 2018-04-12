@@ -1,0 +1,33 @@
+Array
+	大小
+	length
+	继承来的方法
+	toString() toLocalString() valueOf() 以逗号分割的字符串返回数组项
+	转换方法
+	join()
+	栈方法
+	push() pop() shift() unshift()
+	重排序方法
+	reverse() sort()
+	操作方法
+	concat() slice() splice()
+	位置方法
+	indexOf() lastIndexOf()
+	迭代方法
+	every() filter() forEach() some() map()
+	归并数组
+	reduce() reduceRight()
+String
+	大小
+	length
+	继承来的方法
+	toString() toLocalString() valueOf() 都返回基本字符串
+	操作方法
+	concat() slice() substr() substring()
+	位置方法
+	indexOf() lastIndexOf()
+	大小写转化
+	toLowerCase() toUpperCase()
+	模式匹配
+	match() search() replace() split()
+	
