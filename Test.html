@@ -44,7 +44,7 @@
 	},10)
 	console.log(sum);*/
 
-	sum(1, 2);
+	/*sum(1, 2);
 	function sum(a, b){
 		return a + b;
 	}
@@ -73,6 +73,16 @@
 
 	SubType.prototype.sayAge = function(){
 		alert(this.age);
-	};
+	};*/
+
+	function factorial(num){
+		if(num <= 1){
+			return 1;
+		}else{
+			return num * arguments.callee(--num)
+		}
+	}
+
+	factorial(4)
 
 </script>
