@@ -50,4 +50,29 @@
 	}
 	var fn = function(a){return a}
 
+	function SuperType(name){
+		this.name = name;
+	}
+	SuperType.prototype.sayName = function(){
+		alert(this.name);
+	}
+
+	function SubType(name, age){
+		SuperType.call(this, name);
+		this.age = age;
+	}
+
+	function inheritPrototype(SubType, SuperType){
+		// 获取父构造函数原型副本
+		var prototype = Object.create(SuperType.prototype); // 创建对象 
+		prototype.constructor = SubType;  // 增强对象
+		SubType.prototype = prototype;   // 指定对象
+	}
+
+	inheritPrototype(SubType, SuperType);
+
+	SubType.prototype.sayAge = function(){
+		alert(this.age);
+	};
+
 </script>
