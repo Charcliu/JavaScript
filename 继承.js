@@ -10,8 +10,8 @@ fnP.print = function(){
 }
 
 function son(name, age, school){
-	this.school = school;
 	father.call(this, name, age);
+	this.school = school;
 }
 
 function empty(){}
