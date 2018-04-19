@@ -75,7 +75,7 @@
 		alert(this.age);
 	};*/
 
-	function factorial(num){
+	/*function factorial(num){
 		if(num <= 1){
 			return 1;
 		}else{
@@ -83,6 +83,15 @@
 		}
 	}
 
-	factorial(4)
+	factorial(4)*/
+
+	var promise = new Promise((resolve, reject) => {
+		for(var i = 0; i < 10000; i++){}
+		resolve(i)
+	})
+	promise.then((value) => {
+		console.log(value);
+	})
+	console.log("Async");
 
 </script>
